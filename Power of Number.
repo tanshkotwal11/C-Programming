@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int a,power,b;
+    scanf("%d %d",&a,&b);
+    power=pow(a,b);
+    printf("%d",power);
+        
+    return 0;
+}
