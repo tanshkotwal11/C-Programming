@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   float t,conversion;
+    scanf("%f",&t);
+    conversion=t*1.8+32;
+    printf("%.2f",conversion);
+    return 0;
+}
