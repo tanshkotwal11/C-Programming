@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+int lengthincm;
+    float meterconversion, kmconversion;
+    scanf("%d",&lengthincm);
+    meterconversion = lengthincm/100;
+    kmconversion= meterconversion/1000;
+    printf("%.2f %.2f", meterconversion,kmconversion);
+    return 0;
+}
