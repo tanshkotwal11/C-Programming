@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+
+    char Str [1000];
+    fgets(Str,sizeof(Str),stdin);
+    int upper=0 , lower=0;
+    for (int i=0; Str[i]!='\0';++i){
+    if(isalpha(Str[i])){
+        if (isupper(Str[i]))
+            upper++;
+        else 
+            lower++;
+    }
+        }
+    printf("%d %d",upper , lower);
+    return 0;
+}
