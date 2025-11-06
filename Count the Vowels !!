@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+char Str[1000];
+    gets(Str);
+        
+        int count=0;
+    for(int i=0;i<strlen(Str);++i){
+        if (isalpha(Str[i])){
+            Str [i]= tolower(Str[i]);
+            if (Str[i]== 'a'|| Str[i]=='e' || Str[i]=='i'|| Str[i]=='o'|| Str[i]=='u')
+                count++;
+        }
+        
+    }
+        printf("%d",count);
+        
+    return 0;
+}
